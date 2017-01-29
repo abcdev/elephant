@@ -25,5 +25,9 @@ and invoking the executable from the current directory, e.g.
 
 $ echo 'Good morning Mr. President.' | ./elephant -m models/english/
 
+Using Docker you can also interact with the running image, e.g.
+
+$ docker run  elephant-docker /bin/bash -c "echo 'Good morning Mr. President.' | elephant -m models/english -f iob"
+
 Included in the distribution there are the models for sentence and word boundary
 detection of English, Dutch and Italian.
